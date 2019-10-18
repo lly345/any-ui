@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <p><span>用户名：</span><input type="text" id="user" /></p>
+            <p><span>密 码： </span><input type="text" id="pwd" /></p>
+            <button id="btn">登录</button>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        btn.onclick = () => {
+            const option = {
+                username: user.value,
+                password: pwd.value
+            };
+            axios.post("/", option).then(res => {
+                console.log(res);
+            });
+        };
+    </script>
+</html>

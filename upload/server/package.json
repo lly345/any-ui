@@ -1,0 +1,15 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "egg-bin dev"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "egg": "^2.23.0",
+        "egg-bin": "^4.13.0"
+    }
+}
